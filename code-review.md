@@ -2,7 +2,7 @@
 title: Code Review
 layout: default
 ---
-
+[Home](./)   |   [Code Review](code-review.html)
 # Code Review Video
 
 Below is the recorded code review for my CS-499 ePortfolio.
