@@ -13,6 +13,14 @@ body {
 a, h1, h2, h3 {
   color: var(--primary-color);
 }
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
 .page-header {
   background: #002244;
 }
