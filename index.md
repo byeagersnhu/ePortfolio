@@ -7,7 +7,7 @@ layout: page
 [Enhancement One](enhancement-one.md) |
 [Enhancement Two](enhancement-two.md) |
 [Enhancement Three](enhancement-three.md) |
-[Professional Self-Assessment](self-assessment.md)
+[Self-Assessment](self-assessment.md)
 
 # Welcome to My ePortfolio
 
