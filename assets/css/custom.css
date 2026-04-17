@@ -25,6 +25,11 @@ h3 {
   background: #002244;
 }
 
+a {
+  color: var(--scondary-color);
+  text-decoration: underline;
+}
+
 nav a:hover {
-  color: var(--secondary-color)
+  color: var(--primary-color)
 }
