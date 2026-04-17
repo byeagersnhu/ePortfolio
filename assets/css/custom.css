@@ -10,6 +10,12 @@ body {
   color: var(--text-color);
 }
 
+.page-header .project-name,
+.page-header .project-tagline {
+  color: #002244 !important; /* Broncos Navy */
+}
+
+
 h1, h2, h3 {
   color: var(--primary-color);
 }
@@ -31,6 +37,6 @@ a {
   font-weight: 500;
 }
 
-nav a:hover {
+a:hover {
   color: var(--secondary-color)
 }
