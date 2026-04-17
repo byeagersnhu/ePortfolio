@@ -12,15 +12,13 @@ body {
 
 .page-header .project-name,
 .page-header .project-tagline {
-  color: var(--primary-color) !important; /* Broncos Navy */
+  color: var(--primary-color) !important; 
 }
 
-
-/* Body headings (Markdown #, ##, ###) */
 .main-content h1,
 .main-content h2,
 .main-content h3 {
-  color: #FB4F14 !important; /* Broncos Orange */
+  color: var(--secondary-color)!important; 
 }
 
 
