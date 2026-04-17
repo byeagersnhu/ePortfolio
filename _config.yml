@@ -1,1 +1,10 @@
 theme: jekyll-theme-cayman
+plugins:
+  -Jekyll-include-cache
+
+# Add custom styleSheet
+sass:
+  style: compressed
+
+include:
+  -assets/css/custom.css  
