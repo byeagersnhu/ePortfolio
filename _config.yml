@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 plugins:
-  -Jekyll-include-cache
+  -jekyll-include-cache
 
 # Add custom styleSheet
 sass:
