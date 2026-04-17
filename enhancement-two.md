@@ -25,17 +25,19 @@ Algorithmic Components
 Several components demonstrate my algorithmic skill. rankAnimal() is a custom scoring algorithm that evaluates each animal against rescue-type criteria using weighted attributes. getApplicableRescueTypes() determines which rescue categories an animal qualifies for based on structured rules. and attachRescueTypes() enriches raw database documents with computed rescue classifications. I also implemented fuzzy search logic using regular expressions and multi-field matching, along with efficient data handling using arrays, maps and object transformations. 
 
 Here is a simplified example of how the Water Rescue logic evaluates an animal:
+
 Suppose an animal has the following attributes
-•	Breed: Labrador Retriever
-•	Age: 2 years (104 weeks)
-•	Sex: Neutered Male
-•	Animal Type: Dog
-The Water Rescue criteria might include: 
-Attribute	Condition	Score	Total
-Breed	Matches preferred water-rescue breeds	+150	150
-Age	Between 1-3 years (based on the difference from the midpoint)	+34 	184
-Sex	Neutered Male Preferred	+40	224
-Type	Must be a dog (receives negative if not dog)	+50	274
+
+	•	Breed: Labrador Retriever
+	•	Age: 2 years (104 weeks)
+	•	Sex: Neutered Male
+	•	Animal Type: Dog
+	The Water Rescue criteria might include: 
+	Attribute	Condition	Score	Total
+	Breed	Matches preferred water-rescue breeds	+150	150
+	Age	Between 1-3 years (based on the difference from the midpoint)	+34 	184
+	Sex	Neutered Male Preferred	+40	224
+	Type	Must be a dog (receives negative if not dog)	+50	274
 
 This example illustrates how the algorithm uses weighted, domain-specific logic to produce meaningful rankings. 
 The fuzzy search evaluate multiple fields using case-insensitive partial matching; name, breed, and animal_type. For example, the query “Shephard” would match any breed that contains the word Shephard (German Shephard, Australian Shephard) or a name the contains Shephard. The fuzzy search uses a regular expression and checks each field, returning any animal where any field contains the substring. This makes the search flexible and intuitive for users. 
@@ -45,6 +47,7 @@ The original System, built in Python using JupyterDash, offered only basic filte
 
 Reflection and Outcomes
 This enhancement demonstrates strong alignment with all five program outcomes while also reflecting significant personal learning and growth. By structuring the backend into modular services such as rankAnimals, searchAnimals, and attachRescueTypes, I created a codebase that supports collaborative development and is accessible to diverse audiences, fulfilling Outcome One. Through clear documentation, intentional naming, and a polished UI that visually communicates algorithmic output, such as rescue badges and ranked cards, I delivered professional-quality written and visual communication aligned with Outcome Two. The design of the ranking algorithm itself directly satisfies Outcome Three, I applied algorithmic principles, weighted scoring, fuzzy matching, and efficient sorting to solve a real problem while managing trade-offs between flexibility, interpretability, and performance. Implementing the enhancement using industry-standard tools such as Node.js, Express, MongoDB, and Angular demonstrates mastery of modern techniques and tools, fulfilling Outcome Four. Finally, although the enhancement was not primarily security-focused, I still applied a security mindset by sanitizing user input, avoiding direct string interpolation in queries, and ensuring the search endpoint exposed only necessary fields, practices that mitigate common vulnerabilities and align with Outcome Five. 
+
 Throughout the process of designing and refining the search and ranking system, I learned how to break a complex problem into algorithmic components, structure a clean and maintainable service layer, and maintain schema consistency between the frontend and backend. I also gained experience debugging the interactions between Angular, Express, and MongoDB to ensure that UI behavior accurately reflected backend logic. These lessons emerged through several key challenges: resolving mismatched query parameters between the frontend and backend, preventing the UI from overwriting ranked results with alphabetical sorting, and ensuring that rescue ranking triggered correctly based on user input. Each challenge strengthened my understanding of full-stack architecture, algorithm integration, and the importance of intentional data flow. Ultimately, this enhancement demonstrates my ability to design and implement a real algorithm, integrate it into a full-stack application, and polish the UI to reflect algorithmic output. The result is a high-quality search and ranking system that significantly improves the original artifact and clearly aligns with the program outcomes.
 
 ## Screenshot
