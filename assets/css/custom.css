@@ -28,6 +28,7 @@ h3 {
 a {
   color: var(--scondary-color);
   text-decoration: underline;
+  font-weight: 500;
 }
 
 nav a:hover {
