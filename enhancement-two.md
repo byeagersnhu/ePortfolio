@@ -2,6 +2,7 @@
 title: Enhancement Two
 layout: page
 ---
+
 [Home](index.md) |
 [Original Artifact](original-artifact.md) |
 [Enhancement One](enhancement-one.md) |
@@ -15,13 +16,15 @@ layout: page
 [View Enhancement Two Repository](https://github.com/byeagersnhu/enhancement-two)
 
 ## Overview
-	The artifact I selected for Enhancement Two is the backend search and filtering system from my Animal Adoption Center dashboard, originally created in CS-340 Client/Server Development. The initial version of this project used Python, JupyterDash, mock data, and included only basic filtering and display logic. It did not include any meaningful search algorithms, ranking systems, or data-driven decision logic. In Enhancement One, I rebuilt the JupyterDash project into a MEAN-stack application. For Enhancement Two, I expanded the backend significantly by implementing a custom multi-criteria ranking algorithm that evaluates animals for different rescue-type suitability categories (Water, Mountain, and Disaster), and by replacing the original filter with a capable fuzzy search system that can locate animals based on flexible, multi-field queries. 
-	I selected this artifact because it allowed me to demonstrate clear mastery of algorithmic reasoning and data-structure-driven problem solving. The enhancement transformed a simple data filter into a fully functional, production-style search engine. This includes a custom scoring algorithm, multi-criteria evaluation, weighted ranking, efficient lookups, a clean service-layer abstraction, integration with a database, and a polished UI that reflects algorithmic output. This enhancement shows my ability to design, implement, and optimize algorithms that operate on real data structures and to integrate those algorithms into a full-stack application. 
+
+The artifact I selected for Enhancement Two is the backend search and filtering system from my Animal Adoption Center dashboard, originally created in CS-340 Client/Server Development. The initial version of this project used Python, JupyterDash, mock data, and included only basic filtering and display logic. It did not include any meaningful search algorithms, ranking systems, or data-driven decision logic. In Enhancement One, I rebuilt the JupyterDash project into a MEAN-stack application. For Enhancement Two, I expanded the backend significantly by implementing a custom multi-criteria ranking algorithm that evaluates animals for different rescue-type suitability categories (Water, Mountain, and Disaster), and by replacing the original filter with a capable fuzzy search system that can locate animals based on flexible, multi-field queries. 
+
+I selected this artifact because it allowed me to demonstrate clear mastery of algorithmic reasoning and data-structure-driven problem solving. The enhancement transformed a simple data filter into a fully functional, production-style search engine. This includes a custom scoring algorithm, multi-criteria evaluation, weighted ranking, efficient lookups, a clean service-layer abstraction, integration with a database, and a polished UI that reflects algorithmic output. This enhancement shows my ability to design, implement, and optimize algorithms that operate on real data structures and to integrate those algorithms into a full-stack application. 
 	
 Algorithmic Components
-	Several components demonstrate my algorithmic skill. rankAnimal() is a custom scoring algorithm that evaluates each animal against rescue-type criteria using weighted attributes. getApplicableRescueTypes() determines which rescue categories an animal qualifies for based on structured rules. and attachRescueTypes() enriches raw database documents with computed rescue classifications. I also implemented fuzzy search logic using regular expressions and multi-field matching, along with efficient data handling using arrays, maps and object transformations. 
+Several components demonstrate my algorithmic skill. rankAnimal() is a custom scoring algorithm that evaluates each animal against rescue-type criteria using weighted attributes. getApplicableRescueTypes() determines which rescue categories an animal qualifies for based on structured rules. and attachRescueTypes() enriches raw database documents with computed rescue classifications. I also implemented fuzzy search logic using regular expressions and multi-field matching, along with efficient data handling using arrays, maps and object transformations. 
 
-	Here is a simplified example of how the Water Rescue logic evaluates an animal:
+Here is a simplified example of how the Water Rescue logic evaluates an animal:
 Suppose an animal has the following attributes
 •	Breed: Labrador Retriever
 •	Age: 2 years (104 weeks)
