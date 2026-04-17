@@ -26,11 +26,11 @@ h3 {
 }
 
 a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: underline;
   font-weight: 500;
 }
 
 nav a:hover {
-  color: var(--primary-color)
+  color: var(--secondary-color)
 }
