@@ -14,7 +14,7 @@ a, h1, h2, h3 {
   color: var(--primary-color);
 }
 .page-header {
-  background-color: #002244;
+  background: #002244;
   color: #FB4F14 !important;
 }
 
