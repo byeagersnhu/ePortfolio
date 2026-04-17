@@ -13,6 +13,9 @@ body {
 a, h1, h2, h3 {
   color: var(--primary-color);
 }
+.page-header {
+  background: #002244;
+}
 
 nav a:hover {
   color: var(--secondary-color)
