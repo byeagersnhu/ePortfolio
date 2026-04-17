@@ -16,11 +16,15 @@ body {
 }
 
 
-h1, h2, h3 {
-  color: var(--primary-color);
+/* Body headings (Markdown #, ##, ###) */
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+  color: #FB4F14 !important; /* Broncos Orange */
 }
 
-h3 {
+
+.main-content h3 {
   font-size: 1.4rem;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
