@@ -12,7 +12,7 @@ body {
 
 .page-header .project-name,
 .page-header .project-tagline {
-  color: #002244 !important; /* Broncos Navy */
+  color: var(--primary-color) !important; /* Broncos Navy */
 }
 
 
