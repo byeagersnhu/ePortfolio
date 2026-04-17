@@ -54,6 +54,6 @@ Throughout the process of designing and refining the search and ranking system, 
 ![Ranking Example](assets/images/enh2-ranking.png)
 
 ## Key Improvements
-- Multi-criteria Rnaking
+- Multi-criteria ranking
 - Fuzzy search pipeline
 - Improved user experience
