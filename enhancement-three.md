@@ -71,7 +71,7 @@ Overall, this enhancement not only improved the quality and safety of the applic
 ![Schema Validation](assets/images/enh3-schema.png)
 
 ## Key Improvements
-  -Strict schema validation
-  -Unknown-field rejection
-  -Rate Limiting
-  -Backend testing scripts
+  - Strict schema validation
+  - Unknown-field rejection
+  - Rate Limiting
+  - Backend testing scripts
