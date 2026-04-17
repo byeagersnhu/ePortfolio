@@ -1,3 +1,10 @@
+[Home](index.md) |
+[Original Artifact](original-artifact.md) |
+[Enhancement One](enhancement-one.md) |
+[Enhancement Two](enhancement-two.md) |
+[Enhancement Three](enhancement-three.md) |
+[Professional Self-Assessment](self-assessment.md)
+
 	Throughout my Computer Science program and the development of this ePortfolio, I have grown into a more intentional, capable, and security-minded software engineer. The coursework, hands-on projects, and capstone enhancements have helped me identify my strengths, refine my professional goals, and build the technical foundation necessary to enter the field with confidence. This portfolio represents not only the work I have completed, and the engineer I have become, but also the engineer I wish to iterate on. One who values secure design, maintainable architecture, clear communication, and continuous improvement. 
 	My journey through the program gave me experience collaborating in team environments, communicating with stakeholders, and working through the full software development lifecycle. Course such as CS-340: Client/Server Development introduced me to the fundamentals of building applications that interact with databases, and it was in this course that I created the first version of the Animal Adoption Center (AAC) application. This project taught me how to structure client/server interactions, manage data flow, and design systems that respond predictably to user input. 
 	Later, in CS-465: Full Stack Development, I built my first full-stack MEAN application, the Travlr Getaways. This course pushed me to integrate frontend frameworks, backend logic, and database design into a cohesive system. It was the first time I saw how all layers of an application come together, and it shaped my interest in backend architecture and full-stack engineering. 
