@@ -14,7 +14,7 @@ layout: page
 ## Repository Link
 [View Enhancement One Respository](https://github.com/byeagersnhu/Enhancement-One)
 
-## Overview 
+## Narrative
 The artifact I selected for Enhancement One is an interactive animal adoption dashboard originally created in CS-340 Client/Server Development. The original version was built using Python, JupyterDash, and mock MongoDB data. While it demonstrated basic filtering and visualization features, it lacked scalable architecture, real database integration, and modern UI/UX patterns. For this enhancement, I rebuilt the entire application using the MEAN stack, MongoDB, Express, Angular, and Node.js, transforming it into a fully functional, production-level web application. 
 I selected this artifact because it provided a strong foundation for demonstrating my ability to take an existing project and significantly elevate it through improved architecture, real-world technologies, and professional design practices. This enhancement showcases several key software engineering competencies, including full-stack development, API design, data modeling, security-aware engineering, and UI/UX refinement. 
 
