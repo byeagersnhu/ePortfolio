@@ -3,12 +3,14 @@ title: Enhancement Two
 layout: page
 ---
 
-[Home](index.md) |
-[Original Artifact](original-artifact.md) |
-[Enhancement One](enhancement-one.md) |
-[Enhancement Two](enhancement-two.md) |
-[Enhancement Three](enhancement-three.md) |
-[Professional Self-Assessment](self-assessment.md)
+<div class="nav-links">
+  [Home](index.md) |
+  [Original Artifact](original-artifact.md) |
+  [Enhancement One](enhancement-one.md) |
+  [Enhancement Two](enhancement-two.md) |
+  [Enhancement Three](enhancement-three.md) |
+  [Professional Self-Assessment](self-assessment.md)
+</div>
 
 # Enhancement Two: Ranking Algorithm & Fuzzy Search
 
