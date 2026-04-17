@@ -9,7 +9,7 @@ layout: page
 [Enhancement Three](enhancement-three.md) |
 [Professional Self-Assessment](self-assessment.md)
 
-# Welcome ot My ePortfolio
+# Welcome to My ePortfolio
 
 This ePortfolio showcases the owrk I completed during my Computer Science program at Sourthern New Hampshire University, including the orignal Animal Adoption Center Application and three major enhancements completed for my CS-499 Capstone.
 
