@@ -6,6 +6,7 @@
 [Enhancement Three](enhancement-three.md) |
 [Professional Self-Assessment](self-assessment.md)
 
+# Professional Self-Assessment
 
 Throughout my Computer Science program and the development of this ePortfolio, I have grown into a more intentional, capable, and security-minded software engineer. The coursework, hands-on projects, and capstone enhancements have helped me identify my strengths, refine my professional goals, and build the technical foundation necessary to enter the field with confidence. This portfolio represents not only the work I have completed, and the engineer I have become, but also the engineer I wish to iterate on. One who values secure design, maintainable architecture, clear communication, and continuous improvement. 
 
