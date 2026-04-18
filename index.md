@@ -54,6 +54,5 @@ Use the links in the header to explore, or the arrows below to move in order.
 
 ---
 
-<div style="text-align:center; font-size:1.2em;">
-[Original Artifact](original-artifact.md) ➡️
-</div>
+[Original Artifact ->](original-artifact.md) 
+
