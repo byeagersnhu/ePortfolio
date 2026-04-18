@@ -53,6 +53,5 @@ I value clean architecture, thoughtful documentation, and building systems that 
 Use the links in the header to explore, or the arrows below to move in order.
 
 ---
-<div stle="text-align:center;">
+
   [Original Artifact ->](original-artifact.md) 
-</div>
