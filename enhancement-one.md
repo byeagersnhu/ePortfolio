@@ -25,7 +25,7 @@ The enhanced application follows a clean, intentional MEAN-stack architecture wi
 The frontend was rebuilt as a modular Angular application. I refactored the UI into standalone components, including a filter sidebar, a sortable and paginated results lists, and a reusable map modal that utilizes google maps, for viewing animal locations. Each component communicates through Angular’s input/output bindings, ensuring predictable data flow and state management. All HTTP communication is centralized in a dedicated AnimalService, which constructs API requests using query parameters. This design keeps the UI lightweight and responsive while delegating heavy operations to the backend.
 
 #### Landing Page
-This screenshot shows the redesign landing page with a cleaner layout.
+This screenshot shows the redesigned landing page with a cleaner layout.
 ![Landing Page](/ePortfolio/assets/images/enh1-landing.png)
 
 #### Pagination
