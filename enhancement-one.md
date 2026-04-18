@@ -24,12 +24,28 @@ The enhanced application follows a clean, intentional MEAN-stack architecture wi
 
 The frontend was rebuilt as a modular Angular application. I refactored the UI into standalone components, including a filter sidebar, a sortable and paginated results lists, and a reusable map modal that utilizes google maps, for viewing animal locations. Each component communicates through Angular’s input/output bindings, ensuring predictable data flow and state management. All HTTP communication is centralized in a dedicated AnimalService, which constructs API requests using query parameters. This design keeps the UI lightweight and responsive while delegating heavy operations to the backend.
 
+[Landing Page](/ePortfolio/assets/images/enh1-landing.png)
+Landing page
+[Pagination](/ePortfolio/assets/images/enh1-pagination.png)
+Pagination
+[Map](/ePortfolio/assets/images/enh1-map.png)
+Map
+
 The backend was redesigned using a controller-service-model architecture. Controllers handle HTTP requests, validate parameters, and format responses. Services encapsulate business logic such as filtering, sorting, and pagination. Mongoose models define the structure of animal documents and ensure consistent data types. This structure makes the system easier to maintain, test, and extend. The API follows RESTful principles, with predictable endpoints and consistent response shapes. Each endpoint returns only the data required by the frontend, reducing payload size and simplifying Angular service logic. 
 
 The database stores structured animal records using a Mongoose schema that defines the fields required by the application. While this enhancement did not yet introduce advance validation rules or indexing strategies, the schema ensures that each document follows a consistent structure and can be reliably queried by the backend. 
 
 ### API Design Decisions
 A major part of this enhancement involved designing the API to be predictable, consistent, and easy for the frontend to consume. I focused on creating uniform response structures so that the Angular components could rely on a stable data shape regardless of which filters or sorting options were applied. This eliminated conditional UI logic and reduced the likelihood of bugs. I also separated the backend into controllers and services, allowing business logic to evolve independently from request handling. This separation improved  maintainability, made the codebase easier to test, and supported cleaner architectural boundaries. Additionally, the backend was designed to parse query parameters and translate them directly into MongoDB queries, ensuring that filtering, sorting, and pagination were performed server-side. This approach reduced memory usage, improved performance, and allowed the frontend to remain lightweight and responsive. Together, these design decisions created an API that is scalable, efficient, and straightforward for the Angular frontend to integrate with. 
+
+[Filter](/ePortfolio/assets/images/enh1-filter.png)
+Filter
+[Breed Sort](/ePortfolio/assets/images/enh1-sort-breed.png)
+Breed Sort
+[Name Sort](/ePortfolio/assets/images/enh1-sort-name.png)
+Name Sort
+[Type Sort](/ePortfolio/assets/images/enh1-sort-type.png)
+Type Sort
 
 ### Testing, Debugging and Performance Considerations
 Testing and debugging were essential throughout this enhancement. I used Postman to verify each API endpoint and ensure that filtering, sorting, and pagination behaved correctly under different combinations of parameters. On the frontend, Angular’s debugging tools helped trace component interactions and identify issues with state synchronization.
