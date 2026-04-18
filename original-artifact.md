@@ -1,5 +1,5 @@
 ---
-title: Orignal Artifact
+title: Original Artifact
 layout: page
 ---
 [Home](index.md) |
@@ -9,40 +9,45 @@ layout: page
 [Enhancement Three](enhancement-three.md) |
 [Professional Self-Assessment](self-assessment.md)
 
+---
+
 ## Repository Link
 [View Original AAC Repository](https://github.com/byeagersnhu/CS-340/tree/main)
 
+--- 
+
 # Original Artifact: Animal Adoption Center (AAC)
 
-The original AAC application was developed in CS-340: Client/Server Development. It served as the foundation for all three enhancements in this portfolio.
+The original AAC application was developed in **CS‑340: Client/Server Development** and served as the foundation for all three enhancements in this portfolio. While functional, the system had several limitations that restricted scalability, usability, and maintainability.
 
-While functional, the original system had several limitations: 
-
-- Filtering was limited to **three radio buttons** (Water, Mountain or Wilderness, Disaster or Tracking)
-- No sorting, or ranking logic exsisted, and limited searching (breed only)
-- The UI was static and lacked modern interaction patterns
-- All filtering occured **client-side** using Pandas, limiting scalability
-- No backend validation, schema enforcement, or security controls
+### Key Limitations of the Original System
+- Filtering was limited to **three radio buttons** (Water, Mountain/Wilderness, Disaster/Tracking)  
+- No sorting or ranking logic existed, and searching was limited to **breed only**  
+- The UI was static and lacked modern interaction patterns  
+- All filtering occurred **client‑side** using Pandas, limiting scalability  
+- No backend validation, schema enforcement, or security controls  
 
 ---
-This depicts the original interface exactly as it appeared before any enhancements
-#### Starting View
-This shows the dashboard immediately after launching the oringal JupyterDash application.
+
+This section depicts the original interface exactly as it appeared before any enhancements.
+
+### Starting View
+This screenshot shows the dashboard immediately after launching the original JupyterDash application.
 
 ![Starting View](/ePortfolio/assets/images/Starting.png)
 
-#### Disaster Rescue Filter
-Selecting the **Disaster** radio button filtered the dataset to show only animal matching disaster rescue suitability.
+### Disaster Rescue Filter
+Selecting the **Disaster** radio button filtered the dataset to show only animals matching disaster rescue suitability.
 
 ![Disaster Rescue](/ePortfolio/assets/images/Disaster.png)
 
-#### Mountain Rescue Filter
-Selecting the **Mountain or Wilderness** radio button filtered the dataset to show only animal matching mountain or wilderness rescue suitability.
+### Mountain/Wilderness Rescue Filter
+Selecting the **Mountain or Wilderness** radio button filtered the dataset to show only animals matching mountain or wilderness rescue suitability.
 
 ![Mountain View](/ePortfolio/assets/images/Mountain.png)
 
-#### Reset View
-The **Reset** radio returned the dashboard to its initial state. 
+### Reset View
+The **Reset** option returned the dashboard to its initial state.
 
 ![Reset View](/ePortfolio/assets/images/Reset.png)
 
@@ -50,16 +55,17 @@ The **Reset** radio returned the dashboard to its initial state.
 
 ## Code Review Video
 
-Before beginning the enhancement process, I conducted a structured code review of the orginal CS-340 artifact. This review evaluated the project using the CS-499 Code Review Checklist. Some key findings from the review are:
+Before beginning the enhancement process, I conducted a structured code review of the original CS‑340 artifact using the **CS‑499 Code Review Checklist**. This review helped identify weaknesses in the original implementation and guided the direction of each enhancement.
 
-- The project lacked modularity and separation of concerns
-- Filtering logic was tightly coupled to UI components
-- All logic ran client-side, no backend layer exsisted
-- No validation, schema enforcement, or security controls
-- Minimal documentation and inconsistent naming
-- Limited UI/UX functionality (Four radio buttons, No sorting, breed only search)
+### Key Findings from the Review
+- The project lacked modularity and separation of concerns  
+- Filtering logic was tightly coupled to UI components  
+- All logic ran client‑side; **no backend layer existed**  
+- No validation, schema enforcement, or security controls  
+- Minimal documentation and inconsistent naming  
+- Limited UI/UX functionality (four radio buttons, no sorting, breed‑only search)
 
-A full walkthrough of the review is provided in the video below. 
+A full walkthrough of the review is provided in the video below.
 
 <div style="text-align:center;">
   <iframe width="560" height="315"
@@ -72,4 +78,8 @@ A full walkthrough of the review is provided in the video below.
   </iframe>
 </div>
 
+---
+
+
+[<- Home](index.md) | [Enhancement One ->](enhancement-one.md)
 
