@@ -21,6 +21,12 @@ body {
   color: var(--secondary-color)!important; 
 }
 
+.nav-links {
+  white-space: nowrap;
+  text-aling: center;
+  display: block;
+  margin-bottom: 1rem;
+}
 
 .main-content h3 {
   font-size: 1.4rem;
