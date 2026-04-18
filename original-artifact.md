@@ -31,22 +31,22 @@ The original AAC application was developed in **CS‑340: Client/Server Developm
 
 This section depicts the original interface exactly as it appeared before any enhancements.
 
-### Starting View
+#### Starting View
 This screenshot shows the dashboard immediately after launching the original JupyterDash application.
 
 ![Starting View](/ePortfolio/assets/images/Starting.png)
 
-### Disaster Rescue Filter
+#### Disaster Rescue Filter
 Selecting the **Disaster** radio button filtered the dataset to show only animals matching disaster rescue suitability.
 
 ![Disaster Rescue](/ePortfolio/assets/images/Disaster.png)
 
-### Mountain/Wilderness Rescue Filter
+#### Mountain/Wilderness Rescue Filter
 Selecting the **Mountain or Wilderness** radio button filtered the dataset to show only animals matching mountain or wilderness rescue suitability.
 
 ![Mountain View](/ePortfolio/assets/images/Mountain.png)
 
-### Reset View
+#### Reset View
 The **Reset** option returned the dashboard to its initial state.
 
 ![Reset View](/ePortfolio/assets/images/Reset.png)
