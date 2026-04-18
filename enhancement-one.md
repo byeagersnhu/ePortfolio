@@ -51,11 +51,11 @@ Here we have a demonstration of DOG being filtered sucessfully.
 
 #### Sorting
 Sorting was expanded to support multiple fields, including name, breed, and animal type.
-[Breed Sort](/ePortfolio/assets/images/enh1-sort-breed.png)
+![Breed Sort](/ePortfolio/assets/images/enh1-sort-breed.png)
 
-[Name Sort](/ePortfolio/assets/images/enh1-sort-name.png)
+![Name Sort](/ePortfolio/assets/images/enh1-sort-name.png)
 
-[Type Sort](/ePortfolio/assets/images/enh1-sort-type.png)
+![Type Sort](/ePortfolio/assets/images/enh1-sort-type.png)
 
 
 ### Testing, Debugging and Performance Considerations
