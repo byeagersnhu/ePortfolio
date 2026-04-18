@@ -57,7 +57,7 @@ This ensures that even under high request volume or automated misuse, the system
 
 ## Validated Request Data Flow
 
-### Create Animal Modal (Frontend Validation + Rate Limiting)
+#### Create Animal Modal (Frontend Validation + Rate Limiting)
 This screenshot shows the Create Animal modal, which now enforces strict validation rules before a request is sent.
 
 ![Create Modal](/ePortfolio/assets/images/enh3-create-modal.png)
@@ -82,12 +82,12 @@ To verify that the enhanced validation rules and rate‑limiting protections wor
 - The validation script attempts to insert a series of controlled test documents—some valid, others intentionally malformed—to confirm that the schema enforces all rules.  
 - The cleanup script removes temporary records created during testing, ensuring the database remains clean.
 
-### Schema Validation Test
+#### Schema Validation Test
 This screenshot shows the output of the validation test script, which attempts to insert one valid and several intentionally malformed documents.
 
 ![Validation Test](/ePortfolio/assets/images/enh3-validation-test.png)
 
-### Test Cleanup Script
+#### Test Cleanup Script
 After each test cycle, the cleanup script removes temporary documents to keep the database clean.
 
 ![Cleanup](/ePortfolio/assets/images/enh3-test-cleanup.png)
