@@ -34,6 +34,10 @@ body {
   text-align: center;
 }
 
+.main-content h4 {
+  text-align: center;
+}
+
 .main-content p:first-of-type {
   white-space: nowrap;
   text-align: center;
