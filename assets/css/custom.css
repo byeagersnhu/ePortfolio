@@ -12,7 +12,8 @@ body {
 
 .page-header .project-name,
 .page-header .project-tagline {
-  color: var(--primary-color) !important; 
+  color: var(--primary-color) !important;
+  background: var(--background-color)
 }
 
 .main-content h1,
@@ -24,15 +25,16 @@ body {
   font-weight: 600;
 }
 
+.main-content h1 {
+  text-align: center;
+}
+
 .main-content p:first-of-type {
   white-space: nowrap;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.page-header {
-  background: #002244;
-}
 
 a {
   color: var(--primary-color);
