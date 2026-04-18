@@ -76,9 +76,6 @@ This enhancement demonstrates strong alignment with all five program outcomes wh
 
 Throughout the process of designing and refining the search and ranking system, I learned how to break a complex problem into algorithmic components, structure a clean and maintainable service layer, and maintain schema consistency between the frontend and backend. I also gained experience debugging the interactions between Angular, Express, and MongoDB to ensure that UI behavior accurately reflected backend logic. These lessons emerged through several key challenges: resolving mismatched query parameters between the frontend and backend, preventing the UI from overwriting ranked results with alphabetical sorting, and ensuring that rescue ranking triggered correctly based on user input. Each challenge strengthened my understanding of full-stack architecture, algorithm integration, and the importance of intentional data flow. Ultimately, this enhancement demonstrates my ability to design and implement a real algorithm, integrate it into a full-stack application, and polish the UI to reflect algorithmic output. The result is a high-quality search and ranking system that significantly improves the original artifact and clearly aligns with the program outcomes.
 
-## Screenshots
-![Ranking Example](assets/images/enh2-ranking.png)
-
 ## Key Improvements
 - Multi-criteria ranking
 - Fuzzy search pipeline
