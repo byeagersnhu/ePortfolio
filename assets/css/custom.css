@@ -24,6 +24,7 @@ body {
 .main-content p:first-of-type {
   white-space: nowrap;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .main-content h3 {
