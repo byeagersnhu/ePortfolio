@@ -23,7 +23,7 @@ I selected this artifact because it provided a strong foundation for demonstrati
 
 ---
 
-## System Architecture and Technology Integration
+### System Architecture and Technology Integration
 The enhanced application follows a clean, intentional MEAN‑stack architecture with clear separation of concerns across the frontend, backend, and database layers.
 
 ### Frontend (Angular)
@@ -58,7 +58,7 @@ The database stores structured animal records using a Mongoose schema that defin
 
 ---
 
-## API Design Decisions
+### API Design Decisions
 A major part of this enhancement involved designing an API that is predictable, consistent, and easy for the frontend to consume.
 
 Key decisions included:
@@ -82,7 +82,7 @@ Sorting expanded to support multiple fields.
 
 ---
 
-## Testing, Debugging, and Performance Considerations
+### Testing, Debugging, and Performance Considerations
 Testing and debugging were essential throughout this enhancement. I used **Postman** to verify each API endpoint and ensure that filtering, sorting, and pagination behaved correctly under different parameter combinations. On the frontend, Angular’s debugging tools helped trace component interactions and identify issues with state synchronization.
 
 Key challenges included:
@@ -95,7 +95,7 @@ Performance considerations also influenced several design decisions. I implement
 
 ---
 
-## Reflection and Outcomes
+### Reflection and Outcomes
 This enhancement taught me how to approach a project with production‑level expectations. Rebuilding the dashboard in Angular required designing clean component architecture, managing state across multiple UI elements, and ensuring the interface remained responsive and intuitive.
 
 Integrating the backend taught me how to structure REST endpoints, maintain consistency between the frontend and backend, and design a scalable data flow.
