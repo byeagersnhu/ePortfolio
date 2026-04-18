@@ -29,19 +29,44 @@ Here is a simplified example of how the Water Rescue logic evaluates an animal:
 
 Suppose an animal has the following attributes
 
-	•	Breed: Labrador Retriever
-	•	Age: 2 years (104 weeks)
-	•	Sex: Neutered Male
-	•	Animal Type: Dog
-	The Water Rescue criteria might include: 
-	Attribute	Condition	Score	Total
-	Breed	Matches preferred water-rescue breeds	+150	150
-	Age	Between 1-3 years (based on the difference from the midpoint)	+34 	184
-	Sex	Neutered Male Preferred	+40	224
-	Type	Must be a dog (receives negative if not dog)	+50	274
+- Breed: Labrador Retriever
+- Age: 2 years (104 weeks)
+- Sex: Neutered Male
+- Animal Type: Dog
+  
+The Water Rescue criteria might include: 
 
-This example illustrates how the algorithm uses weighted, domain-specific logic to produce meaningful rankings. 
-The fuzzy search evaluate multiple fields using case-insensitive partial matching; name, breed, and animal_type. For example, the query “Shephard” would match any breed that contains the word Shephard (German Shephard, Australian Shephard) or a name the contains Shephard. The fuzzy search uses a regular expression and checks each field, returning any animal where any field contains the substring. This makes the search flexible and intuitive for users. 
+| Attribute | Condition | Score | Total |
+|----------|-----------|-------|-------|
+| Breed | Matches preferred water-rescue breeds |	+150 |	150 |
+| Age |	Between 1-3 years (based on the difference from the midpoint) |	+34 | 184 |
+| Sex |	Neutered Male Preferred | +40 |	224 |
+| Type | Must be a dog (receives negative if not dog) | +50 | 274 |
+
+This example illustrates how the algorithm uses weighted, domain-specific logic to produce meaningful rankings.
+
+
+#### Fuzzy Search Example
+The fuzzy search evaluates multiple fields using case-insensitive partial matching.
+Here is an example of the fuzzy search in action:
+
+![Fuzzy Search](/ePortfolio/assets/images/enh2-fuzzy.png)
+
+#### Rescue-Type Badges
+Each animal card now displays badges showing which rescue categories it qualifies for.
+
+![Rescue Badges](/ePortfolio/assets/images/enh2-badges.png)
+
+#### Rescue Type Ranking
+Each animal can be ranked by rescue type suitability. Each of the following screenshots demonstrates this ranking working.
+This also functions as case-insensitive.
+![Water Rescue Ranking](/ePortfolio/assets/images/enh2-water-rescue.png)
+
+![Mountain Rescue Ranking](/ePortfolio/assets/images/enh2-mountain-rescue.png)
+
+![Disaster Rescue Ranking](/ePortfolio/assets/images/enh2-disaster-rescue.png)
+
+
 
 ### Comparison to the Original System
 The original System, built in Python using JupyterDash, offered only basic filtering and display capabilities. The backend consisted of a simple CRUD wrapper around MongoDB, where the read() method returned raw documents and the dashboard applied static filters through radio buttons and dropdowns. There was no search engine, no ranking logic, no weighted evaluation, and no service-layer abstraction. The JupyterDash interface simply loaded the entire dataset into a Pandas DataFrame and filtered it client-side, which limited scalability and prevented any meaningful algorithmic processing. In contrast, the enhancement MEAN-stack version introduces a fully realized backend search system with fuzzy matching, multi-field evaluation, and a custom multi-criteria rescue-ranking algorithm. Instead of static UI filters, the Angular frontend now communicates with a structured Express controller and service layer that performs server-side filtering, sorting, and scoring. The fuzzy search algorithm evaluates each animal record in linear time, O(n), by checking the query against multiple fields using case-insensitive regular expressions, while the rescue-ranking algorithm adds and O(n log n) sorting step to order animals by computed suitability score. Together, these improvements create a scalable search pipeline that remains efficient even as the dataset grows. Performance improved significantly: the original system reloaded the entire dataset and performed all filtering in the browser, while the enhanced version uses optimized server-side queries, structured evaluation logic, and a ranking pipeline that scales cleanly. The result is a faster, more flexible, and far more capable system than the original Python implementation. 
