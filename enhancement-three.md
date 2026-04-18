@@ -48,11 +48,26 @@ To protect the API from excessive or automated requests, I implemented rate limi
 This ensures that even under high request volume or automated misuse, the system remains stable and responsive. 
 Validated Request Dataflow
 
+#### Create Animal Modal (Frontend Validation + Rate Limiting)
+This screenshot shows the Create Animal modal, which now enforces strict validation rules before a request is sent.
+
+![Create Modal](/ePortfolio/assets/images/enh3-create-modal.png)
+
 When a user submits the Create Animal form, the request moves through a structured validation pipeline before any data is written to MongoDB. The process begins in the Angular frontend, where the form collects user input and sends it to the Express backend through a POST request. As soon as the request reaches the server, it is first evaluated by the rate limiting middleware, which ensures the user has not exceeded the allowed number of create attempts within the current time window. If the request is permitted, it then passes through middleware that strips out any fields not defined in the Mongoose schema, preventing accidental or malicious data from entering the system. After this cleanup step, the sanitized request is handed to the Mongoose model, which enforces all schema rules, including required fields, enum constraints, type checks, and trimming behavior. Only when the request satisfies every validation rule does Mongoose allow the document to be inserted into the database. For example, a well-formed request containing a valid animal_type, a recognized breed, and a properly formatted age value is accepted and stored, while any request containing invalid types, missing fields, or disallowed values, is rejected with a clear error message. This layered approach ensures that every record entering the database is intentional, consistent, and aligned with the application’s data model. 
 
 ### Testing Validation and Rate Limiting
 	
 To verify that the enhanced validation rules and rate limiting protections were functioning correctly, I conducted structured backend tests using two custom Node.js scripts: validateSchema.js and cleanupTestData.js. The validateSchema script connects directly to MongoDB and attempts to insert a series of controlled test documents, some valid and others intentionally malformed documents, to confirm that the Mongoose model enforces all schema rules as expected. These tests included invalid enum values, negative numeric ranges, missing required fields, duplicate IDs, incorrect data types, and even a custom validator that rejects empty breed values. Each case produced clear success or failure logs, allowing me to confirm that the schema correctly accepted valid documents and rejected invalid ones. After each test run, the cleanupTestData script removed all temporary records created during validation, ensuring that the database remained clean and consistent for repeated testing cycles. 
+
+#### Schema Validation Test
+This shows the output of the validation test script, which attempts to insert 1 valid and several intentionally malformed documents.
+
+![Validation Test](/ePortfolio/assets/images/enh3-validation-test.png)
+
+#### Test Cleanup Script
+After each test cycle, the cleanup script removes temporary documents to keep the database clean.
+
+![Cleanup](/ePortfolio/assets/images/enh3-test-cleanup.png)
 
 I also tested the rate limiter by submitting rapid, repeated POST requests to confirm that excessive create attempts were blocked with the appropriate error message. Together, these scripts provided a reliable, repeatable way to validate the integrity of the schema and the effectiveness of the security enhancements, demonstrating that the backend now behaves predictably and safely under both normal and edge-case conditions. 
 
@@ -67,9 +82,6 @@ Implementing rate limiting, rejecting unknown fields, and delaying the delete fe
 Finally, the use of modern tools such as Node.js, Express, MongoDB, and Mongoose aligns with Outcome Four, as I applied industry-standard techniques to build a more reliable and professional backend. Working through the challenges of schema enforcement, validation failures, and repeated test cycles strengthened my confidence in full-stack development and deepened my understanding of how backend logic interacts with database constraints. 
 
 Overall, this enhancement not only improved the quality and safety of the application but also reinforced the skills and mindset I will carry into future professional work. This artifact now serves as a strong representation of my backend engineering abilities within my ePortfolio and supports my long-term goal of building secure, maintainable, and professional-quality full-stack applications. The lessons learned in this enhancement will directly inform my future work as a software engineer. 
-
-## Screenshots
-![Schema Validation](assets/images/enh3-schema.png)
 
 ## Key Improvements
 - Strict schema validation
